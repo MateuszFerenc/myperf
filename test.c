@@ -9,10 +9,10 @@ void funcB(int l){
 int main(){
 	for (int i = 0; i < 20; i++){
 		printf("i=%d\n", i);
-		if(i>=10)
+		//if(i>=10)
 			funcB(1000);
-		else
-			funcB(50);
+		//else
+		//	funcB(50);
    	}
    	return 0;
 }
