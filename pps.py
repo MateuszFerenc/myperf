@@ -24,9 +24,9 @@ def analyze_perf_script(ignore, tracepoints, data, delay):
 		time_ = round(time_ * 1000, 4)
 		values.append(time_)
 		deviations.append(time_ - delay)
-		pcnt.append(round(time_/(time_ - delay),2)*100)
+		pcnt.append(((time_ - delay)/delay) * 100)
 	
-	return (values, ignored, deviations, pcnt)
+	return values, ignored, deviations, pcnt
 	
 if __name__ == "__main__":
 	parser =  argparse.ArgumentParser(description="Script for reading, analysis and displaying Perf script data (2023) Mateusz Ferenc")
@@ -52,16 +52,25 @@ if __name__ == "__main__":
 		_avg = round(mean(values), 2)
 		_stdev = round(stdev(values), 3)
 		tracepoints = len(values)
+		
 		print(f"Tracepoints: {tracepoints}\nIgnored tracepoints: {ignored}")
 		print(f"Execution time:\n\tMinumum: {_min} ms\n\tMaximum: {_max} ms\n\tAverage: {_avg} ms\n\tStandard deviation: {_stdev} ms")
+		
 		plotter.plot(values, color='r', label='funcB')
 		plotter.xticks(range(0, tracepoints))
 		plotter.xlabel('tracepoint no.', weight='light', style='italic')
 		plotter.ylabel('time [ms]', weight='light', style='italic')
 		plotter.title(f"funcB exectution time", weight='bold')
-		plotter.legend()
 		plotter.grid('on', linestyle=':', linewidth=0.5)
-		plotter.ylim(_min - (_stdev * (_avg // args.delay)), _max + (_stdev * (_avg // args.delay)))
+		plotter.axhline(y=_max, color='k', linestyle='--', label=f"max = {_max}")
+		plotter.axhline(y=_min, color='k', linestyle='--', label=f"min = {_min}")
+		plotter.axhline(y=args.delay, color='g', linestyle='-', label=f"delay = {args.delay}")
+		plotter.axhline(y=_avg, color='y', linestyle='--', label=f"average = {_avg}")
+		#d = [args.delay] * tracepoints
+		#plotter.plot(d, color='g', label="delay")
+		plotter.legend()
+		#plotter.ticklabel_format(useOffset=False, style='plain')
+		#plotter.ylim(_min - (_stdev * (_avg // args.delay)), _max + (_stdev * (_avg // args.delay)))
 	
 		now_time = datetime.now()
 		dir = pjoin(results_dir, now_time.strftime('%H%M%S_%d%m%y'))
@@ -79,12 +88,13 @@ if __name__ == "__main__":
 		except FileExistsError:
 			pass
 			
-		plotter.close(None)
-		
 		_min = round(min(deviations), 4)
 		_max = round(max(deviations), 4)
 		_avg = round(mean(deviations), 4)
 		print(f"Deviations time:\n\tMinumum: {_min} ms\n\tMaximum: {_max} ms\n\tAverage: {_avg} ms")
+		
+		"""plotter.clf()	
+		plotter.close(None)
 		
 		plotter.plot(deviations, color='g', label='deviation')
 		plotter.xticks(range(0, tracepoints))
@@ -93,7 +103,6 @@ if __name__ == "__main__":
 		plotter.title(f"deviation time", weight='bold')
 		plotter.legend()
 		plotter.grid('on', linestyle=':', linewidth=0.5)
-		plotter.ylim(_min - _stdev, _max + _stdev)
 		
 		file_name = f"funcB_deviations_plot_{now_time.strftime('%H%M%S_%d%m%y')}.png"
 		save_path = pjoin(dir, file_name) if results_dir is not None else file_name
@@ -101,8 +110,9 @@ if __name__ == "__main__":
 		try:
 			plotter.savefig(save_path, dpi=500)
 		except FileExistsError:
-			pass
+			pass"""
 			
+		plotter.clf()
 		plotter.close(None)
 		
 		plotter.plot(pcnt, color='b', label='deviation')
@@ -112,7 +122,6 @@ if __name__ == "__main__":
 		plotter.title(f"deviation %", weight='bold')
 		plotter.legend()
 		plotter.grid('on', linestyle=':', linewidth=0.5)
-		plotter.ylim(_min - _stdev, _max + _stdev)
 		
 		file_name = f"funcB_percent_deviations_plot_{now_time.strftime('%H%M%S_%d%m%y')}.png"
 		save_path = pjoin(dir, file_name) if results_dir is not None else file_name
@@ -121,6 +130,9 @@ if __name__ == "__main__":
 			plotter.savefig(save_path, dpi=500)
 		except FileExistsError:
 			pass
+			
+		plotter.clf()
+		plotter.close(None)
 	
 	else:
 		print("Error:\nNo tracepoints to analyze.\t\t Aborting...")
