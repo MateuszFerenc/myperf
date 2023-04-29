@@ -1,10 +1,9 @@
 #!/bin/bash
 
 prompt=$0
-delay=10
-do_stress=false
+do_stress=true
 stress_time=10
-executable=test_2000
+executable=test_sort
 
 #dumb_probe=$(sudo perf probe -x test 'main' 2>&1 | tr -d '\n' | awk '{print $4}')
 #echo "$0! created $dumb_probe tracepoint"
@@ -34,9 +33,9 @@ sudo perf script --ns -F time,event --deltatime > $filename
 #sudo perf script --ns --deltatime -F +insnlen,-cpu,-pid > $filename
 echo "$0# file $filename created"
 
-$(source venv/bin/activate)
+$(source ../venv/bin/activate)
 echo "$0# ./pps.py output start"
-./pps.py -i="$funcb_probe" -t="$funcb_ret_probe" -f $filename -d $delay
+./pps.py -i="$funcb_probe" -t="$funcb_ret_probe" -f $filename
 echo "$0# ./pps.py output end"
 
 #ign=$(sudo perf probe -d $dumb_probe 2>&1)
