@@ -4,21 +4,24 @@ prompt=$0
 do_stress=true
 stress_time=10
 executable=test_sort
+cycles="cycles:u"
 
 #dumb_probe=$(sudo perf probe -x test 'main' 2>&1 | tr -d '\n' | awk '{print $4}')
 #echo "$0! created $dumb_probe tracepoint"
-funcb_probe=$(sudo perf probe -x $executable 'funcB' 2>&1 | tr -d '\n' | awk '{print $4}')
+
+funcb_probe=$(sudo perf probe -f -x $executable 'funcB' 2>&1 | tr -d '\n' | awk '{print $4}')
 echo "$0! created $funcb_probe tracepoint"
-funcb_ret_probe=$(sudo perf probe -x $executable 'funcB%return' 2>&1 | tr -d '\n' | awk '{print $4}')
+funcb_ret_probe=$(sudo perf probe -f -x $executable 'funcB%return' 2>&1 | tr -d '\n' | awk '{print $4}')
 echo "$0! created $funcb_ret_probe tracepoint"
 
 if [[ $do_stress == true ]]; then
 	echo "$0! Running cpu stress in background for $stress_time s"
-	sudo stress --cpu  8 --timeout $stress_time &
+	sudo stress --cpu  8 --timeout $stress_time > /dev/null & > /dev/null
 fi
 
 echo "$0# perf record output start"
-sudo perf record -e $funcb_probe -e $funcb_ret_probe ./$executable
+#sudo perf record -e $funcb_probe -e $funcb_ret_probe ./$executable
+sudo perf record -e $funcb_probe -e "{probe_test_sort:funcB__return,$cycles}:S" ./$executable
 #sudo perf record -e $funcb_probe,cycles -e $funcb_ret_probe,cycles ./test > /dev/null
 echo "$0# perf record output end"
 
@@ -29,13 +32,13 @@ if [[ -e $filename ]]; then
 fi
 
 echo "$0! dumping Perf data to file"
-sudo perf script --ns -F time,event --deltatime > $filename
-#sudo perf script --ns --deltatime -F +insnlen,-cpu,-pid > $filename
+#sudo perf script --ns -F time,event --deltatime > $filename
+sudo perf script --ns --deltatime > $filename
 echo "$0# file $filename created"
 
 $(source ../venv/bin/activate)
 echo "$0# ./pps.py output start"
-./pps.py -i="$funcb_probe" -t="$funcb_ret_probe" -f $filename
+./pps.py -i="$funcb_probe" -t="$funcb_ret_probe $cycles" -f $filename
 echo "$0# ./pps.py output end"
 
 #ign=$(sudo perf probe -d $dumb_probe 2>&1)

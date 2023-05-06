@@ -1,400 +1,600 @@
-    0.000000000:         probe_test_sort:funcB: 
-    0.081425490: probe_test_sort:funcB__return: 
-    0.000239935:         probe_test_sort:funcB: 
-    0.080502457: probe_test_sort:funcB__return: 
-    0.000241609:         probe_test_sort:funcB: 
-    0.080093712: probe_test_sort:funcB__return: 
-    0.000242766:         probe_test_sort:funcB: 
-    0.081744763: probe_test_sort:funcB__return: 
-    0.000241550:         probe_test_sort:funcB: 
-    0.081477367: probe_test_sort:funcB__return: 
-    0.000239836:         probe_test_sort:funcB: 
-    0.081704788: probe_test_sort:funcB__return: 
-    0.000240003:         probe_test_sort:funcB: 
-    0.081950196: probe_test_sort:funcB__return: 
-    0.000238977:         probe_test_sort:funcB: 
-    0.081393889: probe_test_sort:funcB__return: 
-    0.000239627:         probe_test_sort:funcB: 
-    0.082304138: probe_test_sort:funcB__return: 
-    0.000243762:         probe_test_sort:funcB: 
-    0.084124126: probe_test_sort:funcB__return: 
-    0.000227484:         probe_test_sort:funcB: 
-    0.082052783: probe_test_sort:funcB__return: 
-    0.000250479:         probe_test_sort:funcB: 
-    0.081874076: probe_test_sort:funcB__return: 
-    0.000238022:         probe_test_sort:funcB: 
-    0.083059279: probe_test_sort:funcB__return: 
-    0.000245693:         probe_test_sort:funcB: 
-    0.083054101: probe_test_sort:funcB__return: 
-    0.000247838:         probe_test_sort:funcB: 
-    0.082015037: probe_test_sort:funcB__return: 
-    0.000250392:         probe_test_sort:funcB: 
-    0.081636972: probe_test_sort:funcB__return: 
-    0.000246300:         probe_test_sort:funcB: 
-    0.082622904: probe_test_sort:funcB__return: 
-    0.000245709:         probe_test_sort:funcB: 
-    0.082701875: probe_test_sort:funcB__return: 
-    0.000247556:         probe_test_sort:funcB: 
-    0.082701896: probe_test_sort:funcB__return: 
-    0.000245931:         probe_test_sort:funcB: 
-    0.083268778: probe_test_sort:funcB__return: 
-    0.000241922:         probe_test_sort:funcB: 
-    0.082203970: probe_test_sort:funcB__return: 
-    0.000241696:         probe_test_sort:funcB: 
-    0.085196301: probe_test_sort:funcB__return: 
-    0.000242336:         probe_test_sort:funcB: 
-    0.083413120: probe_test_sort:funcB__return: 
-    0.000247655:         probe_test_sort:funcB: 
-    0.084035427: probe_test_sort:funcB__return: 
-    0.000239745:         probe_test_sort:funcB: 
-    0.088720067: probe_test_sort:funcB__return: 
-    0.000248165:         probe_test_sort:funcB: 
-    0.083768689: probe_test_sort:funcB__return: 
-    0.000247624:         probe_test_sort:funcB: 
-    0.085094176: probe_test_sort:funcB__return: 
-    0.000242723:         probe_test_sort:funcB: 
-    0.084474727: probe_test_sort:funcB__return: 
-    0.000255810:         probe_test_sort:funcB: 
-    0.084067909: probe_test_sort:funcB__return: 
-    0.000241978:         probe_test_sort:funcB: 
-    0.084531950: probe_test_sort:funcB__return: 
-    0.000249693:         probe_test_sort:funcB: 
-    0.082767439: probe_test_sort:funcB__return: 
-    0.000258539:         probe_test_sort:funcB: 
-    0.084262006: probe_test_sort:funcB__return: 
-    0.000249945:         probe_test_sort:funcB: 
-    0.083257359: probe_test_sort:funcB__return: 
-    0.000254845:         probe_test_sort:funcB: 
-    0.084666250: probe_test_sort:funcB__return: 
-    0.000250064:         probe_test_sort:funcB: 
-    0.083756402: probe_test_sort:funcB__return: 
-    0.000247541:         probe_test_sort:funcB: 
-    0.083870927: probe_test_sort:funcB__return: 
-    0.000238916:         probe_test_sort:funcB: 
-    0.089806512: probe_test_sort:funcB__return: 
-    0.000247601:         probe_test_sort:funcB: 
-    0.083674097: probe_test_sort:funcB__return: 
-    0.000241046:         probe_test_sort:funcB: 
-    0.083803776: probe_test_sort:funcB__return: 
-    0.000249934:         probe_test_sort:funcB: 
-    0.085352860: probe_test_sort:funcB__return: 
-    0.000249084:         probe_test_sort:funcB: 
-    0.084349050: probe_test_sort:funcB__return: 
-    0.000246759:         probe_test_sort:funcB: 
-    0.084057173: probe_test_sort:funcB__return: 
-    0.000248298:         probe_test_sort:funcB: 
-    0.085349593: probe_test_sort:funcB__return: 
-    0.000247017:         probe_test_sort:funcB: 
-    0.084327019: probe_test_sort:funcB__return: 
-    0.000250029:         probe_test_sort:funcB: 
-    0.087455351: probe_test_sort:funcB__return: 
-    0.000247999:         probe_test_sort:funcB: 
-    0.085385624: probe_test_sort:funcB__return: 
-    0.000250274:         probe_test_sort:funcB: 
-    0.085812178: probe_test_sort:funcB__return: 
-    0.000248342:         probe_test_sort:funcB: 
-    0.085469165: probe_test_sort:funcB__return: 
-    0.000246854:         probe_test_sort:funcB: 
-    0.089105181: probe_test_sort:funcB__return: 
-    0.000248211:         probe_test_sort:funcB: 
-    0.085898005: probe_test_sort:funcB__return: 
-    0.000246546:         probe_test_sort:funcB: 
-    0.086460996: probe_test_sort:funcB__return: 
-    0.000248803:         probe_test_sort:funcB: 
-    0.086235528: probe_test_sort:funcB__return: 
-    0.000248212:         probe_test_sort:funcB: 
-    0.086129961: probe_test_sort:funcB__return: 
-    0.000257828:         probe_test_sort:funcB: 
-    0.086832313: probe_test_sort:funcB__return: 
-    0.000249674:         probe_test_sort:funcB: 
-    0.085867070: probe_test_sort:funcB__return: 
-    0.000256050:         probe_test_sort:funcB: 
-    0.088567769: probe_test_sort:funcB__return: 
-    0.000255810:         probe_test_sort:funcB: 
-    0.086780034: probe_test_sort:funcB__return: 
-    0.000248413:         probe_test_sort:funcB: 
-    0.086904944: probe_test_sort:funcB__return: 
-    0.000255481:         probe_test_sort:funcB: 
-    0.085778070: probe_test_sort:funcB__return: 
-    0.000246878:         probe_test_sort:funcB: 
-    0.090573138: probe_test_sort:funcB__return: 
-    0.000264568:         probe_test_sort:funcB: 
-    0.087042006: probe_test_sort:funcB__return: 
-    0.000256391:         probe_test_sort:funcB: 
-    0.087521886: probe_test_sort:funcB__return: 
-    0.000256325:         probe_test_sort:funcB: 
-    0.086932826: probe_test_sort:funcB__return: 
-    0.000255152:         probe_test_sort:funcB: 
-    0.086553608: probe_test_sort:funcB__return: 
-    0.000247172:         probe_test_sort:funcB: 
-    0.086539925: probe_test_sort:funcB__return: 
-    0.000256749:         probe_test_sort:funcB: 
-    0.086714938: probe_test_sort:funcB__return: 
-    0.000259539:         probe_test_sort:funcB: 
-    0.087283359: probe_test_sort:funcB__return: 
-    0.000241476:         probe_test_sort:funcB: 
-    0.086725134: probe_test_sort:funcB__return: 
-    0.000255350:         probe_test_sort:funcB: 
-    0.087736132: probe_test_sort:funcB__return: 
-    0.000256503:         probe_test_sort:funcB: 
-    0.086713212: probe_test_sort:funcB__return: 
-    0.000254404:         probe_test_sort:funcB: 
-    0.087322816: probe_test_sort:funcB__return: 
-    0.000254927:         probe_test_sort:funcB: 
-    0.091257255: probe_test_sort:funcB__return: 
-    0.000255967:         probe_test_sort:funcB: 
-    0.087336066: probe_test_sort:funcB__return: 
-    0.000255157:         probe_test_sort:funcB: 
-    0.088076644: probe_test_sort:funcB__return: 
-    0.000257626:         probe_test_sort:funcB: 
-    0.087616634: probe_test_sort:funcB__return: 
-    0.000253842:         probe_test_sort:funcB: 
-    0.086715006: probe_test_sort:funcB__return: 
-    0.000256012:         probe_test_sort:funcB: 
-    0.087056667: probe_test_sort:funcB__return: 
-    0.000256464:         probe_test_sort:funcB: 
-    0.089820525: probe_test_sort:funcB__return: 
-    0.000248253:         probe_test_sort:funcB: 
-    0.087145173: probe_test_sort:funcB__return: 
-    0.000255199:         probe_test_sort:funcB: 
-    0.088288473: probe_test_sort:funcB__return: 
-    0.000257502:         probe_test_sort:funcB: 
-    0.087931535: probe_test_sort:funcB__return: 
-    0.000255464:         probe_test_sort:funcB: 
-    0.087525676: probe_test_sort:funcB__return: 
-    0.000256242:         probe_test_sort:funcB: 
-    0.092876397: probe_test_sort:funcB__return: 
-    0.000261911:         probe_test_sort:funcB: 
-    0.088535754: probe_test_sort:funcB__return: 
-    0.000255192:         probe_test_sort:funcB: 
-    0.087737827: probe_test_sort:funcB__return: 
-    0.000257512:         probe_test_sort:funcB: 
-    0.088397084: probe_test_sort:funcB__return: 
-    0.000256115:         probe_test_sort:funcB: 
-    0.087543728: probe_test_sort:funcB__return: 
-    0.000255025:         probe_test_sort:funcB: 
-    0.089320604: probe_test_sort:funcB__return: 
-    0.000256674:         probe_test_sort:funcB: 
-    0.089545580: probe_test_sort:funcB__return: 
-    0.000257220:         probe_test_sort:funcB: 
-    0.088500989: probe_test_sort:funcB__return: 
-    0.000254863:         probe_test_sort:funcB: 
-    0.087989025: probe_test_sort:funcB__return: 
-    0.000256517:         probe_test_sort:funcB: 
-    0.087474462: probe_test_sort:funcB__return: 
-    0.000253372:         probe_test_sort:funcB: 
-    0.087988467: probe_test_sort:funcB__return: 
-    0.000255032:         probe_test_sort:funcB: 
-    0.087452447: probe_test_sort:funcB__return: 
-    0.000256109:         probe_test_sort:funcB: 
-    0.092678559: probe_test_sort:funcB__return: 
-    0.000267236:         probe_test_sort:funcB: 
-    0.088606441: probe_test_sort:funcB__return: 
-    0.000259085:         probe_test_sort:funcB: 
-    0.088978336: probe_test_sort:funcB__return: 
-    0.000263711:         probe_test_sort:funcB: 
-    0.088624548: probe_test_sort:funcB__return: 
-    0.000274543:         probe_test_sort:funcB: 
-    0.088319349: probe_test_sort:funcB__return: 
-    0.000265113:         probe_test_sort:funcB: 
-    0.091160647: probe_test_sort:funcB__return: 
-    0.000265232:         probe_test_sort:funcB: 
-    0.090216415: probe_test_sort:funcB__return: 
-    0.000263441:         probe_test_sort:funcB: 
-    0.089669065: probe_test_sort:funcB__return: 
-    0.000265335:         probe_test_sort:funcB: 
-    0.089621538: probe_test_sort:funcB__return: 
-    0.000263582:         probe_test_sort:funcB: 
-    0.090550685: probe_test_sort:funcB__return: 
-    0.000264145:         probe_test_sort:funcB: 
-    0.089273309: probe_test_sort:funcB__return: 
-    0.000267091:         probe_test_sort:funcB: 
-    0.094350091: probe_test_sort:funcB__return: 
-    0.000249586:         probe_test_sort:funcB: 
-    0.089627229: probe_test_sort:funcB__return: 
-    0.000266529:         probe_test_sort:funcB: 
-    0.088827974: probe_test_sort:funcB__return: 
-    0.000256999:         probe_test_sort:funcB: 
-    0.088954503: probe_test_sort:funcB__return: 
-    0.000255271:         probe_test_sort:funcB: 
-    0.068379040: probe_test_sort:funcB__return: 
-    0.000162650:         probe_test_sort:funcB: 
-    0.059683656: probe_test_sort:funcB__return: 
-    0.000160423:         probe_test_sort:funcB: 
-    0.059960530: probe_test_sort:funcB__return: 
-    0.000154899:         probe_test_sort:funcB: 
-    0.058292332: probe_test_sort:funcB__return: 
-    0.000153245:         probe_test_sort:funcB: 
-    0.057586437: probe_test_sort:funcB__return: 
-    0.000155495:         probe_test_sort:funcB: 
-    0.058322563: probe_test_sort:funcB__return: 
-    0.000158051:         probe_test_sort:funcB: 
-    0.057929707: probe_test_sort:funcB__return: 
-    0.000159684:         probe_test_sort:funcB: 
-    0.057207110: probe_test_sort:funcB__return: 
-    0.000166696:         probe_test_sort:funcB: 
-    0.057417208: probe_test_sort:funcB__return: 
-    0.000150471:         probe_test_sort:funcB: 
-    0.056882343: probe_test_sort:funcB__return: 
-    0.000151247:         probe_test_sort:funcB: 
-    0.057257100: probe_test_sort:funcB__return: 
-    0.000151363:         probe_test_sort:funcB: 
-    0.058084524: probe_test_sort:funcB__return: 
-    0.000154372:         probe_test_sort:funcB: 
-    0.057211323: probe_test_sort:funcB__return: 
-    0.000151054:         probe_test_sort:funcB: 
-    0.057150154: probe_test_sort:funcB__return: 
-    0.000153552:         probe_test_sort:funcB: 
-    0.056707868: probe_test_sort:funcB__return: 
-    0.000152256:         probe_test_sort:funcB: 
-    0.057165003: probe_test_sort:funcB__return: 
-    0.000151252:         probe_test_sort:funcB: 
-    0.057222498: probe_test_sort:funcB__return: 
-    0.000150256:         probe_test_sort:funcB: 
-    0.057655887: probe_test_sort:funcB__return: 
-    0.000152973:         probe_test_sort:funcB: 
-    0.056665130: probe_test_sort:funcB__return: 
-    0.000150836:         probe_test_sort:funcB: 
-    0.057232008: probe_test_sort:funcB__return: 
-    0.000153702:         probe_test_sort:funcB: 
-    0.056242807: probe_test_sort:funcB__return: 
-    0.000150774:         probe_test_sort:funcB: 
-    0.056518368: probe_test_sort:funcB__return: 
-    0.000150503:         probe_test_sort:funcB: 
-    0.056548253: probe_test_sort:funcB__return: 
-    0.000150545:         probe_test_sort:funcB: 
-    0.057248538: probe_test_sort:funcB__return: 
-    0.000151445:         probe_test_sort:funcB: 
-    0.056495644: probe_test_sort:funcB__return: 
-    0.000150826:         probe_test_sort:funcB: 
-    0.056008269: probe_test_sort:funcB__return: 
-    0.000150549:         probe_test_sort:funcB: 
-    0.056715997: probe_test_sort:funcB__return: 
-    0.000149857:         probe_test_sort:funcB: 
-    0.056411552: probe_test_sort:funcB__return: 
-    0.000150026:         probe_test_sort:funcB: 
-    0.057009766: probe_test_sort:funcB__return: 
-    0.000152842:         probe_test_sort:funcB: 
-    0.057349674: probe_test_sort:funcB__return: 
-    0.000152922:         probe_test_sort:funcB: 
-    0.057221468: probe_test_sort:funcB__return: 
-    0.000150416:         probe_test_sort:funcB: 
-    0.056994133: probe_test_sort:funcB__return: 
-    0.000156064:         probe_test_sort:funcB: 
-    0.056036930: probe_test_sort:funcB__return: 
-    0.000151571:         probe_test_sort:funcB: 
-    0.056005656: probe_test_sort:funcB__return: 
-    0.000151300:         probe_test_sort:funcB: 
-    0.056081436: probe_test_sort:funcB__return: 
-    0.000151168:         probe_test_sort:funcB: 
-    0.057003093: probe_test_sort:funcB__return: 
-    0.000152732:         probe_test_sort:funcB: 
-    0.056978560: probe_test_sort:funcB__return: 
-    0.000152385:         probe_test_sort:funcB: 
-    0.056318468: probe_test_sort:funcB__return: 
-    0.000150785:         probe_test_sort:funcB: 
-    0.056845465: probe_test_sort:funcB__return: 
-    0.000151874:         probe_test_sort:funcB: 
-    0.057008200: probe_test_sort:funcB__return: 
-    0.000149489:         probe_test_sort:funcB: 
-    0.056533169: probe_test_sort:funcB__return: 
-    0.000151948:         probe_test_sort:funcB: 
-    0.056839018: probe_test_sort:funcB__return: 
-    0.000149752:         probe_test_sort:funcB: 
-    0.056245219: probe_test_sort:funcB__return: 
-    0.000150921:         probe_test_sort:funcB: 
-    0.056572751: probe_test_sort:funcB__return: 
-    0.000149727:         probe_test_sort:funcB: 
-    0.056332058: probe_test_sort:funcB__return: 
-    0.000149357:         probe_test_sort:funcB: 
-    0.055928299: probe_test_sort:funcB__return: 
-    0.000150406:         probe_test_sort:funcB: 
-    0.056765538: probe_test_sort:funcB__return: 
-    0.000198910:         probe_test_sort:funcB: 
-    0.056252476: probe_test_sort:funcB__return: 
-    0.000152258:         probe_test_sort:funcB: 
-    0.056453058: probe_test_sort:funcB__return: 
-    0.000155129:         probe_test_sort:funcB: 
-    0.057142810: probe_test_sort:funcB__return: 
-    0.000153780:         probe_test_sort:funcB: 
-    0.056727158: probe_test_sort:funcB__return: 
-    0.000149179:         probe_test_sort:funcB: 
-    0.056494043: probe_test_sort:funcB__return: 
-    0.000155904:         probe_test_sort:funcB: 
-    0.056438479: probe_test_sort:funcB__return: 
-    0.000153869:         probe_test_sort:funcB: 
-    0.057874826: probe_test_sort:funcB__return: 
-    0.000152924:         probe_test_sort:funcB: 
-    0.055730575: probe_test_sort:funcB__return: 
-    0.000150446:         probe_test_sort:funcB: 
-    0.056418569: probe_test_sort:funcB__return: 
-    0.000150027:         probe_test_sort:funcB: 
-    0.056090011: probe_test_sort:funcB__return: 
-    0.000151661:         probe_test_sort:funcB: 
-    0.056450326: probe_test_sort:funcB__return: 
-    0.000155414:         probe_test_sort:funcB: 
-    0.056112013: probe_test_sort:funcB__return: 
-    0.000150980:         probe_test_sort:funcB: 
-    0.056401989: probe_test_sort:funcB__return: 
-    0.000151976:         probe_test_sort:funcB: 
-    0.055989934: probe_test_sort:funcB__return: 
-    0.000150516:         probe_test_sort:funcB: 
-    0.056850111: probe_test_sort:funcB__return: 
-    0.000150037:         probe_test_sort:funcB: 
-    0.056677741: probe_test_sort:funcB__return: 
-    0.000150122:         probe_test_sort:funcB: 
-    0.057008675: probe_test_sort:funcB__return: 
-    0.000151595:         probe_test_sort:funcB: 
-    0.060780537: probe_test_sort:funcB__return: 
-    0.000152249:         probe_test_sort:funcB: 
-    0.056862099: probe_test_sort:funcB__return: 
-    0.000151050:         probe_test_sort:funcB: 
-    0.056879775: probe_test_sort:funcB__return: 
-    0.000152480:         probe_test_sort:funcB: 
-    0.056483799: probe_test_sort:funcB__return: 
-    0.000151176:         probe_test_sort:funcB: 
-    0.056507851: probe_test_sort:funcB__return: 
-    0.000151731:         probe_test_sort:funcB: 
-    0.055763479: probe_test_sort:funcB__return: 
-    0.000150890:         probe_test_sort:funcB: 
-    0.058339571: probe_test_sort:funcB__return: 
-    0.000154058:         probe_test_sort:funcB: 
-    0.056323746: probe_test_sort:funcB__return: 
-    0.000151109:         probe_test_sort:funcB: 
-    0.055499411: probe_test_sort:funcB__return: 
-    0.000150329:         probe_test_sort:funcB: 
-    0.055745111: probe_test_sort:funcB__return: 
-    0.000150671:         probe_test_sort:funcB: 
-    0.056811356: probe_test_sort:funcB__return: 
-    0.000150235:         probe_test_sort:funcB: 
-    0.056605575: probe_test_sort:funcB__return: 
-    0.000150232:         probe_test_sort:funcB: 
-    0.056463826: probe_test_sort:funcB__return: 
-    0.000151120:         probe_test_sort:funcB: 
-    0.056793593: probe_test_sort:funcB__return: 
-    0.000149416:         probe_test_sort:funcB: 
-    0.056410734: probe_test_sort:funcB__return: 
-    0.000151505:         probe_test_sort:funcB: 
-    0.056835720: probe_test_sort:funcB__return: 
-    0.000148562:         probe_test_sort:funcB: 
-    0.055987966: probe_test_sort:funcB__return: 
-    0.000149098:         probe_test_sort:funcB: 
-    0.056030278: probe_test_sort:funcB__return: 
-    0.000151194:         probe_test_sort:funcB: 
-    0.060830697: probe_test_sort:funcB__return: 
-    0.000151768:         probe_test_sort:funcB: 
-    0.055810074: probe_test_sort:funcB__return: 
-    0.000150510:         probe_test_sort:funcB: 
-    0.055802643: probe_test_sort:funcB__return: 
-    0.000153149:         probe_test_sort:funcB: 
-    0.056358909: probe_test_sort:funcB__return: 
-    0.000150770:         probe_test_sort:funcB: 
-    0.056541223: probe_test_sort:funcB__return: 
-    0.000150465:         probe_test_sort:funcB: 
-    0.058976163: probe_test_sort:funcB__return: 
-    0.000151141:         probe_test_sort:funcB: 
-    0.056468143: probe_test_sort:funcB__return: 
-    0.000152758:         probe_test_sort:funcB: 
-    0.056477047: probe_test_sort:funcB__return: 
-    0.000150988:         probe_test_sort:funcB: 
-    0.056629623: probe_test_sort:funcB__return: 
+       test_sort  1354 [002]     0.000000000:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115778547: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  219305972                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000309082:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.114340839: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  216604664                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000306002:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.113870641: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  215709597                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000304713:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.116122362: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  219594147                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000303391:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115138502: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  218131428                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000306147:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115074603: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  218069876                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000305539:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115675631: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  218413056                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000306417:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115213063: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  217437513                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000313413:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115535684: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  218414819                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000304948:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115414682: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  218598352                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000305734:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115066723: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  217966795                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000305870:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.114698791: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  216889013                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000304291:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115815714: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  219446452                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000304453:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.116187358: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  219642829                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000305875:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.114453384: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  216853515                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000306381:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.113926547: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  215883179                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000305436:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115684797: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  218484235                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000305526:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115038996: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  217793277                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000305480:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115300865: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  217804081                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000308458:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.116133057: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  219053080                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000312468:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.114287696: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  216445603                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000307864:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115292203: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  218404849                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000308387:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115004980: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  217826887                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000308095:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115693694: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  219076968                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000307054:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115972747: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  219255058                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000307393:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.114954679: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  217762201                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000305970:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.116618410: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  220912507                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000311207:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.116035845: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  219732912                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000307172:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115312822: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  218341922                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000312275:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115615520: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  218987481                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000310913:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.113139225: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  214342886                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000307251:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.114789416: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  217456196                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000307789:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.113784391: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  215506516                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000307565:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.113504233: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  214072345                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000307496:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.114463443: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  216353606                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000308128:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.113957142: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  215788988                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000307087:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115876465: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  219485491                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000306094:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.113748692: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  215441957                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000307530:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.184757938: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  215185485                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000314619:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.152735893: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  219072020                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000313706:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.114578638: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  216955678                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000311123:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.114145426: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  216100984                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000309788:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115850404: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  219392630                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000309868:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.114722824: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  216604668                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000310192:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115952573: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  219499423                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000311588:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115686510: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  219068895                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000312008:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115434336: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  218569804                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000307873:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115181573: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  218133223                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000308228:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.114000116: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  215892797                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000312335:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.114818483: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  217459118                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000305451:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.116310846: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  219207874                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000307178:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [002]     0.115276210: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [002]     0.000000000:  218344866                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [002]     0.000307221:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.122939248: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  194032338                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000315194:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115599777: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219506072                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000309521:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114168842: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216731594                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306945:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115300138: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218936534                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306506:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115174734: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218696573                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000311491:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114802131: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218000940                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305742:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113810756: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216070883                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305929:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114250911: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216815370                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000310767:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114844337: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218047351                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000307224:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115534613: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219347777                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305168:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114881845: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218131573                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000307483:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114201843: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216803239                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304847:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113978245: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216427970                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305570:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114213466: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216814044                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306458:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.112696939: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  213975571                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305777:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113703020: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  215723927                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000308100:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115184351: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218710982                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000310413:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113702882: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  215869682                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306196:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114683675: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217765795                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305652:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114120672: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216707132                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306707:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114667412: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217687000                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306950:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115392578: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219112604                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305005:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115133667: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218462001                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306454:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113812382: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216113288                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000307342:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113918172: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216304295                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306030:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114800559: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217988731                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306034:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114605271: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217460103                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306537:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115609667: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219465659                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000307296:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114892112: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218135148                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304858:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114357852: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217077930                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306015:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115358068: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219026144                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000302656:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115128174: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218584050                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304749:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114159370: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216727698                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305790:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114936939: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218210634                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305664:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113806700: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216053895                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303610:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115299907: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218916006                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000309676:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114184810: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216806128                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305508:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114851694: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218066556                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304396:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114027901: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216460342                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000310792:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113414223: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  215352913                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000302231:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113844794: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216163057                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000309452:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.112891653: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  214364216                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303124:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113762715: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216008961                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303484:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114396948: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217144830                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000307057:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114969628: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218265505                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305361:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114707676: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217798428                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305546:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113665857: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  215831408                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306072:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115309719: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218895163                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306427:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115598565: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219492032                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304523:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115406969: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219063177                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305716:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115733662: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219679253                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306490:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.116322724: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  220818898                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305500:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114905801: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218126500                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305458:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115083835: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218512055                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305414:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114757972: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217892271                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000307499:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113824419: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216124843                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306182:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114264565: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216910089                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304539:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114813902: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218002530                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304151:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115013533: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218374936                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304105:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114173513: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216778137                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304678:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114923516: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218197953                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303162:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114189310: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216788826                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303792:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115440832: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219179556                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305121:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115312651: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218945274                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303927:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114439795: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217279645                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305826:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115496238: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219245738                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000302792:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114738429: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217803870                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000309034:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115715932: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219654625                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000310304:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114980257: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218286079                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303130:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114919760: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218165134                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305022:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115193932: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218702684                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303927:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113969989: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216388858                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000307076:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115038306: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218415658                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306265:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115593674: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219471638                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304503:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115367318: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218996610                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303903:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114677360: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217733721                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304969:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114914704: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218187151                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304552:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113988342: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216438614                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304340:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114178202: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216762231                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305195:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114482749: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217339143                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304840:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.116172927: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  220567230                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305283:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114251687: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216940594                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000308919:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113684680: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  215818628                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306030:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114786010: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217916576                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303398:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114244163: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216872785                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303458:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115472081: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219193382                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306892:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114282166: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216966196                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305648:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115828246: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219899825                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304375:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115636945: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219559629                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305896:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113327339: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  215197741                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304630:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113866189: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216201625                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306427:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114033690: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216474928                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304934:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115799228: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219865859                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304993:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114737599: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217859783                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304649:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114651342: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217686276                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304364:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115754496: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219781192                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304771:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.116002377: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  220214861                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306667:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114944680: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218236548                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304960:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115593255: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219437888                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304613:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114218036: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216866806                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304945:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115081804: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218446547                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303205:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114687880: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217700921                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303832:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113866065: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216139166                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305938:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114869847: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218104893                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306086:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113832452: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216113868                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305540:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114838958: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218009843                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306620:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.116165634: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  220555321                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303730:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115433490: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219166225                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303701:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114836787: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218041134                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305662:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114430027: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217226789                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306548:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113720386: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  215919020                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306161:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113275940: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  215086680                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304665:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114684765: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217756130                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303371:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114263088: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216923964                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306011:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114620075: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217605333                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000306910:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113755304: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  215989601                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304904:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114703439: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217784946                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305715:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113276050: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  215086137                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305349:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115792139: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219807634                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305522:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115163682: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218618296                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305956:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115904083: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  220031016                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305566:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114374526: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217128919                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304577:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115329810: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218939717                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305692:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115303111: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218928772                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000307841:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114703542: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217798710                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305484:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114682567: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217755701                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305147:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113496437: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  215510994                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305759:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114528496: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217406871                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304979:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114317236: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217054655                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305271:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113411926: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  215347572                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000302932:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113459234: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  215424977                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305462:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115375522: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219026865                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304236:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115171743: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218661846                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000308938:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114260388: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216954265                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303148:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115459480: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219219139                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303166:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114934446: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218189542                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305481:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115625042: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  219429657                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304025:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114692436: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217708196                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304699:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113928551: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  216268529                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305107:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114477613: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217328390                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305750:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113381812: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  215279335                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000303927:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.113549709: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  215601575                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304838:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114620939: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217640078                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000304953:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114951766: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218264602                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305804:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115942425: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  220140885                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305167:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114518390: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  217390237                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305134:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.114826112: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218021096                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
+       test_sort  1354 [003]     0.000305061:         probe_test_sort:funcB: (55a60829624f)
+       test_sort  1354 [003]     0.115146277: probe_test_sort:funcB__return: (55a60829624f <- 55a60829634e)
+       test_sort  1354 [003]     0.000000000:  218595547                      cycles:u:      55a60829634e main+0xd8 (/home/mferenc/projects/Perf/cperf/sort/test_sort)
