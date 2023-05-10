@@ -1,28 +1,26 @@
 #!/bin/bash
 
-prompt=$0
 do_stress=true
 stress_time=10
+
+prompt=$0
 executable=test_sort
 cycles="cycles:u"
+cpus=8
 
-#dumb_probe=$(sudo perf probe -x test 'main' 2>&1 | tr -d '\n' | awk '{print $4}')
-#echo "$0! created $dumb_probe tracepoint"
-
-funcb_probe=$(sudo perf probe -f -x $executable 'funcB' 2>&1 | tr -d '\n' | awk '{print $4}')
+funcb_probe=$(sudo perf probe --force --exec $executable 'funcB' 2>&1 | tr -d '\n' | awk '{print $4}')
 echo "$0! created $funcb_probe tracepoint"
-funcb_ret_probe=$(sudo perf probe -f -x $executable 'funcB%return' 2>&1 | tr -d '\n' | awk '{print $4}')
+funcb_ret_probe=$(sudo perf probe --force --exec $executable 'funcB%return' 2>&1 | tr -d '\n' | awk '{print $4}')
 echo "$0! created $funcb_ret_probe tracepoint"
 
 if [[ $do_stress == true ]]; then
 	echo "$0! Running cpu stress in background for $stress_time s"
-	sudo stress --cpu  8 --timeout $stress_time > /dev/null & > /dev/null
+	sudo stress --cpu $cpus --timeout $stress_time --quiet &
 fi
 
 echo "$0# perf record output start"
-#sudo perf record -e $funcb_probe -e $funcb_ret_probe ./$executable
-sudo perf record -e $funcb_probe -e "{probe_test_sort:funcB__return,$cycles}:S" ./$executable
-#sudo perf record -e $funcb_probe,cycles -e $funcb_ret_probe,cycles ./test > /dev/null
+sudo perf record --event $funcb_probe --event "{$funcb_ret_probe,$cycles}:S" ./$executable
+#sudo perf record --event "{$funcb_probe,$cycles}:S" --event "{$funcb_ret_probe,$cycles}:S" ./$executable
 echo "$0# perf record output end"
 
 filename="perf_test"
@@ -32,18 +30,15 @@ if [[ -e $filename ]]; then
 fi
 
 echo "$0! dumping Perf data to file"
-#sudo perf script --ns -F time,event --deltatime > $filename
 sudo perf script --ns --deltatime > $filename
 echo "$0# file $filename created"
 
 $(source ../venv/bin/activate)
 echo "$0# ./pps.py output start"
-./pps.py -i="$funcb_probe" -t="$funcb_ret_probe $cycles" -f $filename
+./pps.py --ignore="$funcb_probe" --tracepoints="$funcb_ret_probe $cycles" --file $filename
 echo "$0# ./pps.py output end"
 
-#ign=$(sudo perf probe -d $dumb_probe 2>&1)
-#echo "$0! deleted $dumb_probe tracepoint"
-ign=$(sudo perf probe -d $funcb_probe 2>&1)
+sudo perf probe --del $funcb_probe --quiet
 echo "$0! deleted $funcb_probe tracepoint"
-ign=$(sudo perf probe -d $funcb_ret_probe 2>&1)
+sudo perf probe --del $funcb_ret_probe --quiet
 echo "$0! deleted $funcb_ret_probe tracepoint"
