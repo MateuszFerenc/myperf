@@ -1,3 +1,5 @@
 /venv/
-/perf.data*
-/sort/perf.data*
+*perf.data*
+/test_delay/results/
+/sort_random/results/
+/sort_decreasing/results/

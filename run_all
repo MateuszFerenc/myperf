@@ -1,0 +1,102 @@
+#!/bin/bash
+
+if [[ "$#" -eq  "0" ]]; then 
+	echo "You need to pass [true] if run is in decreased system stats, or [false] if normal run"
+	return 3
+else
+	if $1 ; then
+		system="decreased_system_run"
+		
+		rm -rf results_all/decreased_system_run/no_stress/test_delay/*
+		rm -rf results_all/decreased_system_run/no_stress/sort_random/*
+		rm -rf results_all/decreased_system_run/no_stress/sort_decreasing/*
+
+		rm -rf results_all/decreased_system_run/stress/test_delay/*
+		rm -rf results_all/decreased_system_run/stress/sort_random/*
+		rm -rf results_all/decreased_system_run/stress/sort_decreasing/*
+	else
+		system="normal_run"
+		
+		rm -rf results_all/normal_run/no_stress/test_delay/*
+		rm -rf results_all/normal_run/no_stress/sort_random/*
+		rm -rf results_all/normal_run/no_stress/sort_decreasing/*
+
+		rm -rf results_all/normal_run/stress/test_delay/*
+		rm -rf results_all/normal_run/stress/sort_random/*
+		rm -rf results_all/normal_run/stress/sort_decreasing/*
+	fi
+	if [[ $2 ]]; then
+		quiet=$2
+	else
+		quiet=false
+	fi
+fi
+
+now_date=$(date +%H%M%S_%d%m%y)
+
+. backup_results $system
+
+cd test_delay
+echo "running test_delay"
+
+echo "	No CPU stress"
+if $quiet ; then
+	. run_test $now_date false > /dev/null
+else
+	. run_test $now_date false
+fi
+
+cp -r results/no_stress_"$now_date"/* ../results_all/"$system"/no_stress/test_delay/.
+
+echo "	CPU stress"
+if $quiet ; then
+	. run_test $now_date true > /dev/null
+else
+	. run_test $now_date true
+fi
+
+cp -r results/stress_"$now_date"/* ../results_all/"$system"/stress/test_delay/.
+
+cd ../sort_random
+echo "running sort_random"
+
+echo "	No CPU stress"
+if $quiet ; then
+	. run_test $now_date false > /dev/null
+else
+	. run_test $now_date false
+fi
+
+cp -r results/no_stress_"$now_date"/* ../results_all/"$system"/no_stress/sort_random/.
+
+echo "	CPU stress"
+if $quiet ; then
+	. run_test $now_date true > /dev/null
+else
+	. run_test $now_date true
+fi
+
+cp -r results/stress_"$now_date"/* ../results_all/"$system"/stress/sort_random/.
+
+cd ../sort_decreasing
+echo "running sort_decreasing"
+
+echo "	No CPU stress"
+if $quiet ; then
+	. run_test $now_date false > /dev/null
+else
+	. run_test $now_date false
+fi
+
+cp -r results/no_stress_"$now_date"/* ../results_all/"$system"/no_stress/sort_decreasing/.
+
+echo "	CPU stress"
+if $quiet ; then
+	. run_test $now_date true > /dev/null
+else
+	. run_test $now_date true
+fi
+
+cp -r results/stress_"$now_date"/* ../results_all/"$system"/stress/sort_decreasing/.
+
+cd ..

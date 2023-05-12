@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [[ ! -d old_results ]]; then
+	mkdir old_results
+fi
+
+cd old_results
+
+now_date=$(date +%H%M%S_%d%m%y)
+
+mkdir $now_date
+
+cd $now_date
+
+if [[ "$#" -eq  "1" ]]; then
+	cp -r ../../results_all/"$1"/* .
+else
+	cp -r ../../results_all/* .
+fi
+
+cd ../../
