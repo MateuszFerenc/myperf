@@ -2,33 +2,19 @@
 
 if [[ "$#" -eq  "0" ]]; then 
 	echo "You need to pass [true] if run is in decreased system stats, or [false] if normal run"
-	return 3
+	exit 1
 else
 	if $1 ; then
 		system="decreased_system_run"
-		
-		rm -rf results_all/decreased_system_run/no_stress/test_delay/*
-		rm -rf results_all/decreased_system_run/no_stress/sort_random/*
-		rm -rf results_all/decreased_system_run/no_stress/sort_decreasing/*
-
-		rm -rf results_all/decreased_system_run/stress/test_delay/*
-		rm -rf results_all/decreased_system_run/stress/sort_random/*
-		rm -rf results_all/decreased_system_run/stress/sort_decreasing/*
+		. clear_results "decreased"
 	else
 		system="normal_run"
-		
-		rm -rf results_all/normal_run/no_stress/test_delay/*
-		rm -rf results_all/normal_run/no_stress/sort_random/*
-		rm -rf results_all/normal_run/no_stress/sort_decreasing/*
-
-		rm -rf results_all/normal_run/stress/test_delay/*
-		rm -rf results_all/normal_run/stress/sort_random/*
-		rm -rf results_all/normal_run/stress/sort_decreasing/*
+		. clear_results "normal"
 	fi
 	if [[ $2 ]]; then
 		quiet=$2
 	else
-		quiet=false
+		quiet=true
 	fi
 fi
 

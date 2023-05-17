@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.9)  9 MAY 2023 16:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.9)  17 MAY 2023 10:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,16 +460,32 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+)
+
+! LaTeX Error: File `results_all/normal_run/no_stress/sort_decreasing/funcB_cyc
+les*' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 ...n/no_stress/sort_decreasing/funcB_cycles*}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
 ] (./perf_report.aux) ) 
 Here is how much of TeX's memory you used:
- 5262 strings out of 480247
- 84356 string characters out of 5896152
+ 5308 strings out of 480247
+ 86655 string characters out of 5896152
  380226 words of memory out of 5000000
- 23110 multiletter control sequences out of 15000+600000
+ 23141 multiletter control sequences out of 15000+600000
  496820 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,8n,67p,287b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -477,7 +493,7 @@ Here is how much of TeX's memory you used:
 re/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmr17.pfb>
-Output written on perf_report.pdf (1 page, 88313 bytes).
+Output written on perf_report.pdf (1 page, 100080 bytes).
 PDF statistics:
  29 PDF objects out of 1000 (max. 8388607)
  17 compressed objects within 1 object stream

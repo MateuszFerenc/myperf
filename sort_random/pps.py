@@ -75,7 +75,7 @@ if __name__ == "__main__":
 		plotter.axhline(y=_avg, color='y', linestyle='--', label=f"average = {_avg}")
 		plotter.legend()
 	
-		file_name = f"funcB_diff_plot_{now_time}.png"
+		file_name = f"funcB_diff_plot.png"
 		save_path = pjoin(dir, file_name) if results_dir is not None else file_name
 
 		try:
@@ -102,7 +102,7 @@ if __name__ == "__main__":
 		plotter.axhline(y=_avg, color='y', linestyle='--', label=f"average = {_avg}")
 		plotter.legend()
 	
-		file_name = f"funcB_cycles_plot_{now_time}.png"
+		file_name = f"funcB_cycles_plot.png"
 		save_path = pjoin(dir, file_name) if results_dir is not None else file_name
 
 		try:

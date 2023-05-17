@@ -1,0 +1,40 @@
+#!/bin/bash
+
+clear_normal() {
+	rm -rf results_all/normal_run/no_stress/test_delay/*
+	rm -rf results_all/normal_run/no_stress/sort_random/*
+	rm -rf results_all/normal_run/no_stress/sort_decreasing/*
+
+	rm -rf results_all/normal_run/stress/test_delay/*
+	rm -rf results_all/normal_run/stress/sort_random/*
+	rm -rf results_all/normal_run/stress/sort_decreasing/*
+}
+
+clear_decreased() {
+	rm -rf results_all/decreased_system_run/no_stress/test_delay/*
+	rm -rf results_all/decreased_system_run/no_stress/sort_random/*
+	rm -rf results_all/decreased_system_run/no_stress/sort_decreasing/*
+
+	rm -rf results_all/decreased_system_run/stress/test_delay/*
+	rm -rf results_all/decreased_system_run/stress/sort_random/*
+	rm -rf results_all/decreased_system_run/stress/sort_decreasing/*
+}
+
+if [[ "$#" -eq  "0" ]]; then 
+	echo "deleting all results"
+	clear_normal
+	clear_decreased
+else
+	if $1 -eq "normal"; then
+		echo "deleting normal results"
+		clear_normal
+	elif $1 -eq "decreased"; then
+		echo "deleting decreased results"
+		clear_decreased
+	else
+		echo "specify \"normal\" to clear results from normal run and \"decreased\" to clear results from ecreased run"
+		exit 1
+	fi
+fi
+
+echo "OK!"

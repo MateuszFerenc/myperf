@@ -13,9 +13,13 @@ mkdir $now_date
 cd $now_date
 
 if [[ "$#" -eq  "1" ]]; then
+	echo "Backup of $1 results"
 	cp -r ../../results_all/"$1"/* .
 else
+	echo "Backup of all results"
 	cp -r ../../results_all/* .
 fi
 
 cd ../../
+
+echo "OK!"
