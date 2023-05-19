@@ -88,7 +88,6 @@ sudo perf probe --del probe_sort_decreasing:funcB__return --quiet
 </pre>
 
 <br><br>
-Also you should install stress tool (tool to impose load on and stress test a computer system) <br>
-<b>sudo apt install stress</b>
+
 
 </p>
