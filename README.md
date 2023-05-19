@@ -9,8 +9,7 @@ My repository of tests of Perf tool in UNIX (Linux) to measure time and cycles o
 ### results directory tree
 <pre>
 results_all/   
-├── decreased_system_run   
-│   ├── bios   
+├── decreased_system_run    
 │   ├── no_stress   
 │   │   ├── sort_decreasing  
 │   │   ├── sort_random   
@@ -89,6 +88,11 @@ sudo perf probe --del probe_sort_decreasing:funcB__return --quiet
 
 <br><br>
 Also you should install stress tool (tool to impose load on and stress test a computer system) <br>
-<b>sudo apt install stress</b>
+<b>sudo apt install stress</b> <br><br>
+Show potential probe-able functions. <br>
+<b>perf probe --exec executable_name --funcs</b> <br><br>
+Show source code lines. <br>
+<b>perf probe --exec executable_name --line function_name</b> <br><br>
+If command perf probe was used with "-\-force" switch then each new probe (of the same name) will have suffix of "_x", where x is number.
 
 </p>

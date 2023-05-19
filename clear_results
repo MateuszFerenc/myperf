@@ -1,23 +1,23 @@
 #!/bin/bash
 
 clear_normal() {
-	rm -rf results_all/normal_run/no_stress/test_delay/*
-	rm -rf results_all/normal_run/no_stress/sort_random/*
-	rm -rf results_all/normal_run/no_stress/sort_decreasing/*
+	sudo rm -rf results_all/normal_run/no_stress/test_delay/*
+	sudo rm -rf results_all/normal_run/no_stress/sort_random/*
+	sudo rm -rf results_all/normal_run/no_stress/sort_decreasing/*
 
-	rm -rf results_all/normal_run/stress/test_delay/*
-	rm -rf results_all/normal_run/stress/sort_random/*
-	rm -rf results_all/normal_run/stress/sort_decreasing/*
+	sudo rm -rf results_all/normal_run/stress/test_delay/*
+	sudo rm -rf results_all/normal_run/stress/sort_random/*
+	sudo rm -rf results_all/normal_run/stress/sort_decreasing/*
 }
 
 clear_decreased() {
-	rm -rf results_all/decreased_system_run/no_stress/test_delay/*
-	rm -rf results_all/decreased_system_run/no_stress/sort_random/*
-	rm -rf results_all/decreased_system_run/no_stress/sort_decreasing/*
+	sudo rm -rf results_all/decreased_system_run/no_stress/test_delay/*
+	sudo rm -rf results_all/decreased_system_run/no_stress/sort_random/*
+	sudo rm -rf results_all/decreased_system_run/no_stress/sort_decreasing/*
 
-	rm -rf results_all/decreased_system_run/stress/test_delay/*
-	rm -rf results_all/decreased_system_run/stress/sort_random/*
-	rm -rf results_all/decreased_system_run/stress/sort_decreasing/*
+	sudo rm -rf results_all/decreased_system_run/stress/test_delay/*
+	sudo rm -rf results_all/decreased_system_run/stress/sort_random/*
+	sudo rm -rf results_all/decreased_system_run/stress/sort_decreasing/*
 }
 
 if [[ "$#" -eq  "0" ]]; then 
@@ -25,14 +25,14 @@ if [[ "$#" -eq  "0" ]]; then
 	clear_normal
 	clear_decreased
 else
-	if $1 -eq "normal"; then
+	if [[ $1 = "normal_run" ]]; then
 		echo "deleting normal results"
 		clear_normal
-	elif $1 -eq "decreased"; then
+	elif [[ $1 = "decreased_system_run" ]]; then
 		echo "deleting decreased results"
 		clear_decreased
 	else
-		echo "specify \"normal\" to clear results from normal run and \"decreased\" to clear results from ecreased run"
+		echo "specify \"normal\" to clear results from normal run otherwise \"decreased_system_run\" to clear results from ecreased run"
 		exit 1
 	fi
 fi

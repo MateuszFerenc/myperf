@@ -1,88 +1,106 @@
 #!/bin/bash
 
+print_help() {
+	echo -e "Use ./run_all <system> [OPTIONS]\n"
+	echo -e "<system> : Obligatory.\n\t-s, --system (true|false) - You need to pass [true] if run is in decreased system stats, or [false] if normal run"
+	echo -e "<quiet> : Optional, default false.\n\t-q, --quiet - If specified output from each test will be not displayed"
+	echo -e "<comment> : Optional.\n\t-c, --comment (text) - If specified, file \"comment.txt\" will be created with comment for this run"
+}
+
+if [[ "$EUID" -ne 0 ]]; then 
+	echo "Please run as root"
+	exit
+fi
+
 if [[ "$#" -eq  "0" ]]; then 
-	echo "You need to pass [true] if run is in decreased system stats, or [false] if normal run"
-	exit 1
-else
-	if $1 ; then
-		system="decreased_system_run"
-		. clear_results "decreased"
-	else
-		system="normal_run"
-		. clear_results "normal"
-	fi
-	if [[ $2 ]]; then
-		quiet=$2
-	else
-		quiet=true
-	fi
+	print_help
+	exit
+fi
+
+system=0
+quiet=false
+comment=false
+all_args="$@"
+
+while [[ "$#" -gt 0 ]]; do
+    case $1 in
+    	-h|--help) 
+    		print_help
+    		exit
+    		;;
+        -s|--system)
+        	if $2 ; then
+				system="decreased_system_run"
+			else
+				system="normal_run"
+			fi
+        	shift
+        	shift
+        	;;
+        -q|--quiet) 
+        	quiet=true
+        	shift
+        	;;
+        -c|--comment) 
+        	comment=true
+        	comment_data="./run_all $all_args\n\ncomment: $2"
+        	shift
+        	shift
+        	;;
+        *) 
+        	echo "Unknown parameter: $1"
+        	print_help
+        	exit
+        	;;
+    esac
+done
+
+if [[ $system = 0 ]]; then
+	echo -e "-s, --system not specified\nAborting..."
+	print_help
+	exit
 fi
 
 now_date=$(date +%H%M%S_%d%m%y)
 
-. backup_results $system
+./backup_results $system
+./clear_results $system
 
-cd test_delay
-echo "running test_delay"
-
-echo "	No CPU stress"
-if $quiet ; then
-	. run_test $now_date false > /dev/null
-else
-	. run_test $now_date false
+if $comment ; then
+	echo -e "$comment_data" > results_all/"$system"/comment.txt
 fi
 
-cp -r results/no_stress_"$now_date"/* ../results_all/"$system"/no_stress/test_delay/.
+cd tests
 
-echo "	CPU stress"
-if $quiet ; then
-	. run_test $now_date true > /dev/null
-else
-	. run_test $now_date true
-fi
+tests=$(ls)
 
-cp -r results/stress_"$now_date"/* ../results_all/"$system"/stress/test_delay/.
+for test in $tests; do
+	cd "$test" 
+	echo "Running $test"
+	
+	echo "	No CPU stress"
+	if $quiet ; then
+		./run_test $now_date false &> /dev/null
+	else
+		./run_test $now_date false
+	fi
 
-cd ../sort_random
-echo "running sort_random"
+	cp results/no_stress_"$now_date"/* ../../results_all/"$system"/no_stress/"$test"/.
+	sudo rm -rf results/no_stress_"$now_date"
 
-echo "	No CPU stress"
-if $quiet ; then
-	. run_test $now_date false > /dev/null
-else
-	. run_test $now_date false
-fi
+	echo "	CPU stress"
+	if $quiet ; then
+		./run_test $now_date true &> /dev/null
+	else
+		./run_test $now_date true
+	fi
 
-cp -r results/no_stress_"$now_date"/* ../results_all/"$system"/no_stress/sort_random/.
+	cp results/stress_"$now_date"/* ../../results_all/"$system"/stress/"$test"/.
+	sudo rm -rf results/stress_"$now_date"
+	
+	cd ../
+done
 
-echo "	CPU stress"
-if $quiet ; then
-	. run_test $now_date true > /dev/null
-else
-	. run_test $now_date true
-fi
+cd ../
 
-cp -r results/stress_"$now_date"/* ../results_all/"$system"/stress/sort_random/.
-
-cd ../sort_decreasing
-echo "running sort_decreasing"
-
-echo "	No CPU stress"
-if $quiet ; then
-	. run_test $now_date false > /dev/null
-else
-	. run_test $now_date false
-fi
-
-cp -r results/no_stress_"$now_date"/* ../results_all/"$system"/no_stress/sort_decreasing/.
-
-echo "	CPU stress"
-if $quiet ; then
-	. run_test $now_date true > /dev/null
-else
-	. run_test $now_date true
-fi
-
-cp -r results/stress_"$now_date"/* ../results_all/"$system"/stress/sort_decreasing/.
-
-cd ..
+echo "OK!"

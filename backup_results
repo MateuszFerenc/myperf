@@ -1,25 +1,33 @@
 #!/bin/bash
 
+if [[ ! -d results_all ]]; then
+	echo -e "Error: No results_all directory!\nNothing to backup...\nRestoring directory tree."
+	mkdir results_all
+	for d_0 in "decreased_system_run" "normal_run"; do
+		mkdir results_all/"$d_0"
+		for d_1 in "stress" "no_stress"; do
+			mkdir results_all/"$d_0"/"$d_1"
+			for d_2 in $( ls tests ); do
+				mkdir results_all/"$d_0"/"$d_1"/"$d_2"
+			done
+		done
+	done
+	echo "OK!"
+	exit
+fi
+
 if [[ ! -d old_results ]]; then
 	mkdir old_results
 fi
 
-cd old_results
-
 now_date=$(date +%H%M%S_%d%m%y)
-
-mkdir $now_date
-
-cd $now_date
 
 if [[ "$#" -eq  "1" ]]; then
 	echo "Backup of $1 results"
-	cp -r ../../results_all/"$1"/* .
+	cp -r results_all/"$1"/ old_results/"$now_date"/
 else
 	echo "Backup of all results"
-	cp -r ../../results_all/* .
+	cp -r results_all/ old_results/"$now_date"/
 fi
-
-cd ../../
 
 echo "OK!"
