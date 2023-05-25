@@ -1,0 +1,113 @@
+\documentclass[11pt,onecolumn]{article}
+\usepackage{lmodern,setspace,amsmath,amssymb,amsfonts,amsthm,graphicx,multicol,grffile,float}
+\usepackage[a4paper, top=0.7in, bottom=1.0in, left=1.0in, right=1.0in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\title{How to use Perf in UNIX (Linux)}
+\author{Mateusz Ferenc}
+\date{2023\\ May}
+
+\begin{document}
+	
+\maketitle
+	
+\section*{Introduction}
+
+Perf is a tool that uses the hardware PMU (Performance Measurement Unit) to count system statistics.\\
+Using Perf, the user is able to obtain performance counters, tracepoints, kprobes and uprobes.\\\\
+Performance counters are CPU hardware registers that count hardware events such as instructions executed, cache misses, or branch failures. \\
+They provide a basis for profiling applications to trace dynamic control flow and identify hotspots.\\
+Perf provides rich generalized abstractions over hardware-specific capabilities. \\
+Among other things, it provides per-task, per-CPU, and per-workload counters, sampling on top of these, and source code event annotation.\\\\
+A few preliminary clarifications:\\
+Almost all of the commands below require administrative privileges [i.e., superuser, sudo].\\
+Text enclosed in '[]' means it is optional, and the '|' character means the first or second option is possible.
+
+\section{How to setup}
+
+First of all Perf needs to be installed. (also you can check if it not already installed using: \textbf{which perf} or by simply typing \textbf{perf} in your command line to get perf help)\\\\
+You can install Perf using your package menager. \\
+Package name is \textbf{\textit{linux-tools-*your kernel version*}}.\\\\
+On Debian based systems:\\
+\quad\textbf{apt install linux-tools-`uname -r`}\\\\
+When Perf is finally installed you should enable system profiling in kernel configuration.\\
+To do this you need to edit in \textbf{/etc/sysctl.conf} file, value after \textbf{kernel.perf\_event\_paranoid} to \textbf{-1} .\\\\
+Now you are able to use Perf properly.
+
+\newpage
+\section{Preparing the program for testing}
+
+You can measure system statistics using pre-existing trace points, but using custom trace points gives you more flexibility with Perf, resulting in better results.\\\\
+To be able to use tracepoints you need to prepare you program (written in c/c++).\\
+The preparation consists of compiling program using gcc with debug flag (like below).\\
+\quad\textbf{gcc -g -o <\textit{output-file-name}> <\textit{file-name}>}\\
+”-g” flag used to produce debugging information in the operating system’s native format
+
+\section{Creating and using tracepoints}
+
+Now that we have compiled program, we can create tracepoints according to functions or specified location in the code.\\\\
+With the help of the following command, you can get functions that can be probed.\\
+\quad\textbf{perf probe --funcs --exec <\textit{executable-name}>}\\\\
+Also it is possible to list probe-able code lines of any function <function-name>\\
+\textbf{perf probe --line <\textit{function-name}> --exec <\textit{executable-name}>}\\\\
+With the information from the above commands, you can create your own trace points.
+To do this, you can use the following commands.\\\\
+To create a trace point at the entry of the specified function (in this case probe-definition), use:\\
+\textbf{perf probe –exec <\textit{executable-name}> <\textit{probe-definition}>}\\
+Format of probing 'probe-definition' can be different, what affects where probe is placed:
+\begin{center}
+	\textbf{[EVENT=]FUNC[\%return | :RL]}\newline
+\end{center}
+\begin{itemize}
+	\item \textbf{EVENT=} - Specify event name, optional. If specified, overrides the Perf naming convention.
+	\item \textbf{FUNC} - function name to probe, moderatory.
+	\item \textbf{\%return} - place probe at exit of the function, optional.
+	\item \textbf{:RL} - Relative line number from function input, obtained by using the --line switch with the above command, optional.
+\end{itemize}
+If '\textbf{EVENT=}' is not specified, Perf will create tracepoint (name) by using following convention:
+\begin{center}
+	\textbf{probe\_\textit{executable-name}:\textit{function-name}[\_\_return | :\textit{line-number}]}
+\end{center}
+otherwise:
+\begin{center}
+	\textbf{probe\_\textit{executable-name}:\textit{event-name}}
+\end{center}
+i.e.: probe\_test:TestFunction\_\_return, probe\_test:TestEvent, probe\_test:TestFunction:15\\\\
+To test if newly created tracepoints, you can simply run Perf stat like below:\\
+\textbf{perf stat --event <\textit{your-event-name}>}\\
+Output of Perf stat command should contain number how many times your event/events occured.
+
+\section{Recording and obtaining results}
+
+When you have finally prepared your tracepoints, it is time to get the results.\\\\
+My example will show measurements using two self-defined tracepoints.\\
+Because I need to show the time difference between tracepoints pointing to the entrance and exit of the function being measured, i.e. I was measuring how much time it takes to execute code in my function.\\\\
+To do this, you must have at least two tracepoints and use the following command:\\
+\textbf{perf record --event <\textit{your-event-entrance}> --event <\textit{your-event-exit}> <\textit{your-executable}>}\\
+i.e.: perf record -e probe\_test:TestFunction -e probe\_test:TestFunction\_\_return ./test\_executable\\\\
+Now using Perf script, you can get data from Perf record:\\
+\textbf{perf script --ns --deltatime}\\
+The '--ns' flag is used to display time in nanosecond resolution, the '--deltatime' flag is used to calculate the difference (in time) between the occurrence of events.
+
+
+\section{How to interpret the output}
+
+Analyze file generated by Perf script
+
+\section{More about the tracepoints}
+
+adding leader event:\\
+\textbf{perf record --event <\textit{your-event-entrance}>}\\
+redirect to file:\\
+\textbf{perf script --ns --deltatime > <\textit{file-name}>}\\
+
+\section{Adjusting hardware te get better results}
+
+Single core run (no context-switching)\\
+Disable SpeedStep technology\\
+Disable HyperThreading technology\\
+Disable TurboBoost technology\\
+Change CPU governor to performance
+
+\end{document}

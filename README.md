@@ -121,7 +121,7 @@ Flags description:
 		> <b>TurboBoost disabled</b> - CPU turbo (Max) frequency disabled
 		
 		Also for better performance (kernel configuration):
-		> Change CPU governor to perormance, to lock CPU frequency in constant (high) value, using:
+		> Change CPU governor to performance, to lock CPU frequency in constant (high) value, using:
 			<b>sudo cpupower frequency-set --governor performance</b>
 		> Force tests to run on single core only (no context switching) using flag: 
 			<b>-f or --force-single-core</b>
