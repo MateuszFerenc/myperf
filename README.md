@@ -32,6 +32,8 @@ results_all/
 ### Using Perf
 
 <p>
+Install Perf using: <br>
+<b>sudo apt install linux-tools-`uname -r`</b><br><br>
 edit sysctf.conf file and add line kernel... to enable system profiling <br>
 <b><i>nano /etc/sysctl.conf </i></b><br>
 <b>kernel.perf_event_paranoid = -1</b>

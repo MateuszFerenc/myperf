@@ -8,6 +8,10 @@ print_help() {
 	echo -e "<cpu> : Optional, default permit context switching.\n\t-f, --force-single-core - If specified, forces tests to run on single core only to prevent form context switching."
 }
 
+if [[ ! -e /usr/bin/perf ]]; then
+	echo -e "Perf tool not installed...\nInstall using sudo apt install linux-tools-`uname -r`"
+fi
+
 if [[ "$#" -eq  "0" ]]; then 
 	print_help
 	exit
@@ -88,9 +92,9 @@ fi
 
 for test in $tests; do
 	cd "$test" 
-	echo "Running $test"
+	echo -e "\rRunning $test"
 	
-	echo "	No CPU stress"
+	echo -e "\r\tNo CPU stress"
 	if $single_core ; then
 		sudo taskset -c 0 ./run_test $now_date false &> /dev/"$out_dev"
 	else
@@ -100,7 +104,7 @@ for test in $tests; do
 	cp results/no_stress_"$now_date"/* ../../results_all/"$system"/no_stress/"$test"/.
 	sudo rm -rf results/no_stress_"$now_date"
 
-	echo "	CPU stress"
+	echo -e "\r\tCPU stress"
 	if $single_core ; then
 		sudo taskset -c 0 ./run_test $now_date true &> /dev/"$out_dev"
 	else
@@ -115,4 +119,4 @@ done
 
 cd ../
 
-echo "OK!"
+echo -e "\rOK!"
