@@ -1,4 +1,4 @@
-#!/bin/python3
+#! ../../venv/bin/python3
 
 from subprocess import check_output
 from statistics import mean, stdev 

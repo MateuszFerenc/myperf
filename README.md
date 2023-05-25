@@ -96,3 +96,44 @@ Show source code lines. <br>
 If command perf probe was used with "-\-force" switch then each new probe (of the same name) will have suffix of "_x", where x is number.
 
 </p>
+
+### Running tests
+
+<p>
+Run all tests by using:
+<pre>
+sudo ./run_all --system [true|false] 
+</pre>
+Run command below, to get help:
+<pre>
+./run_all -h
+</pre>
+
+<pre>
+Flags description:
+
+-s, --system (bool) : Required, takes boolean value.
+	True: Run with decreased system stats in BIOS:
+		> <b>SpeedStep disabled</b> - CPU frequency multiplier change disabled
+		> <b>HyperThreading disabled</b> - CPU virtual cores disabled, only phisical cores
+		> <b>TurboBoost disabled</b> - CPU turbo (Max) frequency disabled
+		
+		Also for better performance (kernel configuration):
+		> Change CPU governor to perormance, to lock CPU frequency in constant (high) value, using:
+			<b>sudo cpupower frequency-set --governor performance</b>
+		> Force tests to run on single core only (no context switching) using flag: 
+			<b>-f or --force-single-core</b>
+	False: Run with normal system stats (No options disabled in BIOS)
+		
+-q, --quiet : Optional, default all output will be displayed.
+	Disable output from test scripts.
+	
+-c, --comment (text) : Optional, default no comment.txt file generated.
+	Create comment.txt file in results dir, with informations about how script been called, and comment itself
+	
+-f, --force-single-core : Optional, default permit context switching.
+	Force tests to run on single core, which disables context switching between other CPU which positively affects measurements (less noise)
+	
+</pre>
+
+</p>

@@ -1,16 +1,12 @@
 #!/bin/bash
 
 print_help() {
-	echo -e "Use ./run_all <system> [OPTIONS]\n"
-	echo -e "<system> : Obligatory.\n\t-s, --system (true|false) - You need to pass [true] if run is in decreased system stats, or [false] if normal run"
-	echo -e "<quiet> : Optional, default false.\n\t-q, --quiet - If specified output from each test will be not displayed"
-	echo -e "<comment> : Optional.\n\t-c, --comment (text) - If specified, file \"comment.txt\" will be created with comment for this run"
+	echo -e "Use: sudo ./run_all <system> [OPTIONS]\n"
+	echo -e "<system> : Obligatory.\n\t-s, --system (true|false) - You need to pass [true] if run is in decreased system stats, or [false] if normal run."
+	echo -e "<quiet> : Optional, default not quiet.\n\t-q, --quiet - If specified, output from each test will be not displayed."
+	echo -e "<comment> : Optional, default no comment.\n\t-c, --comment (text) - If specified, file \"comment.txt\" will be created with comment for this run."
+	echo -e "<cpu> : Optional, default permit context switching.\n\t-f, --force-single-core - If specified, forces tests to run on single core only to prevent form context switching."
 }
-
-if [[ "$EUID" -ne 0 ]]; then 
-	echo "Please run as root"
-	exit
-fi
 
 if [[ "$#" -eq  "0" ]]; then 
 	print_help
@@ -20,6 +16,7 @@ fi
 system=0
 quiet=false
 comment=false
+single_core=false
 all_args="$@"
 
 while [[ "$#" -gt 0 ]]; do
@@ -47,6 +44,10 @@ while [[ "$#" -gt 0 ]]; do
         	shift
         	shift
         	;;
+        -f|--force-single-core)
+        	single_core=true
+        	shift
+        	;;
         *) 
         	echo "Unknown parameter: $1"
         	print_help
@@ -54,6 +55,11 @@ while [[ "$#" -gt 0 ]]; do
         	;;
     esac
 done
+
+if [[ "$EUID" -ne 0 ]]; then 
+	echo "Please run as root [sudo]"
+	exit
+fi
 
 if [[ $system = 0 ]]; then
 	echo -e "-s, --system not specified\nAborting..."
@@ -74,25 +80,31 @@ cd tests
 
 tests=$(ls)
 
+if $quiet ; then
+	out_dev=null
+else
+	out_dev=stdout
+fi
+
 for test in $tests; do
 	cd "$test" 
 	echo "Running $test"
 	
 	echo "	No CPU stress"
-	if $quiet ; then
-		./run_test $now_date false &> /dev/null
+	if $single_core ; then
+		sudo taskset -c 0 ./run_test $now_date false &> /dev/"$out_dev"
 	else
-		./run_test $now_date false
+		./run_test $now_date false &> /dev/"$out_dev"
 	fi
 
 	cp results/no_stress_"$now_date"/* ../../results_all/"$system"/no_stress/"$test"/.
 	sudo rm -rf results/no_stress_"$now_date"
 
 	echo "	CPU stress"
-	if $quiet ; then
-		./run_test $now_date true &> /dev/null
+	if $single_core ; then
+		sudo taskset -c 0 ./run_test $now_date true &> /dev/"$out_dev"
 	else
-		./run_test $now_date true
+		./run_test $now_date true &> /dev/"$out_dev"
 	fi
 
 	cp results/stress_"$now_date"/* ../../results_all/"$system"/stress/"$test"/.
