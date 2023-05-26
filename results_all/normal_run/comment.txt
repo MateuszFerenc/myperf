@@ -1,0 +1,3 @@
+./run_all -s false -q -c Normal system, gov performance, single core -f
+
+comment: Normal system, gov performance, single core

@@ -1,0 +1,11 @@
+Tracepoints: 200
+Ignored tracepoints: 200
+Execution time:
+	Minumum: 100.03 ms
+	Maximum: 100.59 ms
+	Average: 100.25 ms
+	Standard deviation: 0.057 ms
+Deviations time:
+	Minumum: 0.0332 ms
+	Maximum: 0.5888 ms
+	Average: 0.2511 ms

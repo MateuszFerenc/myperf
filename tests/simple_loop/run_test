@@ -1,0 +1,64 @@
+#!/bin/bash
+
+if [[ "$#" -ne  "2" ]]; then 
+	echo "You need to specify <date> and <stress>"
+	exit 3
+else
+	do_stress=$2
+fi
+
+stress_time=10
+
+prompt=$0
+executable=simple_loop
+ref_cycles="ref-cycles:u"
+cpu_cycles="cpu-cycles:u"
+cpus=$(nproc)
+
+funcb_probe=$(sudo perf probe --exec $executable 'funcB' 2>&1 1>/dev/null)
+status=$(echo "$funcb_probe" | tr -d '\n' | awk '{print $1}')
+if [[ $status = "Added" ]]; then
+	funcb_probe=$(echo "$funcb_probe" | tr -d '\n' | awk '{print $4}')
+else
+	funcb_probe="probe_${executable}:$(echo "$funcb_probe" | tr -d '\n' | awk '{print $3}' | tr -d '"')"
+fi
+echo "$0! created $funcb_probe tracepoint"
+
+funcb_ret_probe=$(sudo perf probe --exec $executable 'funcB%return' 2>&1 1>/dev/null)
+status=$(echo "$funcb_ret_probe" | tr -d '\n' | awk '{print $1}')
+if [[ $status = "Added" ]]; then
+	funcb_ret_probe=$(echo "$funcb_ret_probe" | tr -d '\n' | awk '{print $4}')
+else
+	funcb_ret_probe="probe_${executable}:$(echo "$funcb_ret_probe" | tr -d '\n' | awk '{print $3}' | tr -d '"')"
+fi
+echo "$0! created $funcb_ret_probe tracepoint"
+
+if $do_stress ; then
+	echo "$0! Running cpu stress in background for $stress_time s"
+	sudo stress --cpu $cpus --timeout $stress_time --quiet &> /dev/null &
+fi
+
+echo "$0# perf record output start"
+sudo perf record --event $funcb_probe --event "{$funcb_ret_probe,$ref_cycles,$cpu_cycles}:S" ./$executable 2>/dev/null
+echo "$0# perf record output end"
+
+filename="perf_test"
+if [[ -e $filename ]]; then
+	echo "$0! old $filename was deleted"
+	rm $filename
+fi
+
+echo "$0! dumping Perf data to file"
+sudo perf script --ns --deltatime > $filename
+echo "$0# file $filename created"
+
+$(source ../../venv/bin/activate)
+echo "$0# ./pps.py output start"
+./pps.py --ignore="$funcb_probe" --timed="$funcb_ret_probe" --tracepoints="$ref_cycles $cpu_cycles" --file $filename --stress $2 --date $1 2>/dev/null
+echo "$0# ./pps.py output end"
+deactivate
+
+sudo perf probe --del $funcb_probe --quiet
+echo "$0! deleted $funcb_probe tracepoint"
+sudo perf probe --del $funcb_ret_probe --quiet
+echo "$0! deleted $funcb_ret_probe tracepoint"
