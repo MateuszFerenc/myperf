@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.9)  26 MAY 2023 09:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.9)  26 MAY 2023 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -530,57 +530,129 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--80
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--92
+Underfull \hbox (badness 10000) in paragraph at lines 83--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--92
+Underfull \hbox (badness 10000) in paragraph at lines 83--94
 
  []
 
 
-Overfull \hbox (29.60854pt too wide) in paragraph at lines 83--92
-\T1/lmr/bx/n/10.95 perf record --event <\T1/lmr/bx/it/10.95 your-event-entrance
-\T1/lmr/bx/n/10.95 > --event <\T1/lmr/bx/it/10.95 your-event-exit\T1/lmr/bx/n/1
-0.95 > <\T1/lmr/bx/it/10.95 your-executable\T1/lmr/bx/n/10.95 > 
- []
-
-
-Overfull \hbox (16.87968pt too wide) in paragraph at lines 83--92
+Overfull \hbox (16.87968pt too wide) in paragraph at lines 83--94
 \T1/lmr/m/n/10.95 i.e.: perf record -e probe_test:TestFunction -e probe_test:Te
 stFunction__return ./test_executable 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--92
+Underfull \hbox (badness 10000) in paragraph at lines 83--94
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--94
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 100--104
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9
+4.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-[3] (./documentation.aux) ) 
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 112--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--119
+
+ []
+
+
+Overfull \hbox (52.92065pt too wide) in paragraph at lines 135--135
+[]\T1/lmtt/m/n/10.95 simple_loop  9298 [000]     0.000000000:         probe_sim
+ple_loop:funcB: (56309a67d149)[] 
+ []
+
+
+Overfull \hbox (47.17192pt too wide) in paragraph at lines 135--135
+[]\T1/lmtt/m/n/10.95 simple_loop  9298 [000]     1.087778453: probe_simple_loop
+:funcB__return: (56309a67d149[] 
+ []
+
+
+Overfull \hbox (29.92572pt too wide) in paragraph at lines 135--135
+[]\T1/lmtt/m/n/10.95 simple_loop  9298 [000]     0.000000000: 1148077744       
+             ref-cycles:u:[] 
+ []
+
+
+Overfull \hbox (29.92572pt too wide) in paragraph at lines 135--135
+[]\T1/lmtt/m/n/10.95 simple_loop  9298 [000]     0.000000000: 1030436445       
+             cpu-cycles:u:[] 
+ []
+
+
+Overfull \hbox (52.92065pt too wide) in paragraph at lines 135--135
+[]\T1/lmtt/m/n/10.95 simple_loop  9298 [000]     0.000007534:         probe_sim
+ple_loop:funcB: (56309a67d149)[] 
+ []
+
+
+Overfull \hbox (47.17192pt too wide) in paragraph at lines 135--135
+[]\T1/lmtt/m/n/10.95 simple_loop  9298 [000]     1.095117039: probe_simple_loop
+:funcB__return: (56309a67d149[] 
+ []
+
+
+Overfull \hbox (29.92572pt too wide) in paragraph at lines 135--135
+[]\T1/lmtt/m/n/10.95 simple_loop  9298 [000]     0.000000000: 1146679864       
+             ref-cycles:u:[] 
+ []
+
+
+Overfull \hbox (29.92572pt too wide) in paragraph at lines 135--135
+[]\T1/lmtt/m/n/10.95 simple_loop  9298 [000]     0.000000000: 1029181631       
+             cpu-cycles:u:[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--145
+
+ []
+
+[4] (./documentation.aux) ) 
 Here is how much of TeX's memory you used:
- 5299 strings out of 480247
- 85261 string characters out of 5896152
- 388246 words of memory out of 5000000
- 23141 multiletter control sequences out of 15000+600000
- 504451 words of font info for 53 fonts, out of 8000000 for 9000
+ 5344 strings out of 480247
+ 85938 string characters out of 5896152
+ 389246 words of memory out of 5000000
+ 23181 multiletter control sequences out of 15000+600000
+ 509033 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,6n,67p,289b,217s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/us
-r/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public
+ 60i,6n,67p,289b,221s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr
+/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public
 /lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmr17.pfb>
-Output written on documentation.pdf (3 pages, 164162 bytes).
+onts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on documentation.pdf (4 pages, 208768 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 62 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
