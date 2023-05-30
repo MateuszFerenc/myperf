@@ -1,0 +1,3 @@
+./run_all -s true -q -c decreased run, gov performance, contexswitching permitted
+
+comment: decreased run, gov performance, contexswitching permitted

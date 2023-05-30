@@ -1,3 +1,0 @@
-./run_all -s true -q -c Decreased system, gov powersave
-
-comment: Decreased system, gov powersave

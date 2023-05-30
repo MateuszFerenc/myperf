@@ -1,0 +1,21 @@
+Ignored tracepoints: probe_sort_random:funcB
+Timed tracepoints: probe_sort_random:funcB__return
+Measured tracepoints: ref-cycles:u cpu-cycles:u
+Measured "probe_sort_random:funcB__return": 200
+Measured "ref-cycles:u": 200
+Measured "cpu-cycles:u": 200
+Execution time:
+	Minumum: 60.71 ms
+	Maximum: 100.04 ms
+	Average: 79.21 ms
+	Standard deviation: 17.569 ms
+ref-cycles:
+	Minumum: 638906
+	Maximum: 21160304
+	Average: 16695386.0
+	Standard deviation: 3902993.0
+cpu-cycles:
+	Minumum: 995958
+	Maximum: 31680986
+	Average: 25020709.0
+	Standard deviation: 3849566.0

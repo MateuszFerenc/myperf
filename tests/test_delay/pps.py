@@ -2,10 +2,11 @@
 
 from subprocess import check_output
 from statistics import mean, stdev 
-import matplotlib.pyplot as plotter
+#import matplotlib.pyplot as plotter
 from os.path import join as pjoin
 from os import mkdir
 import argparse
+from numpy import savetxt
 
 def analyze_perf_script(ignore, tracepoints, data, delay):
 	lines = data.strip().split("\n")
@@ -71,7 +72,7 @@ if __name__ == "__main__":
 		print(line)
 		stdout_data += line + '\n'
 		
-		plotter.plot(values, color='r', label='funcB')
+		"""plotter.plot(values, color='r', label='funcB')
 		plotter.xlabel('tracepoint no.', weight='light', style='italic')
 		plotter.ylabel('time [ms]', weight='light', style='italic')
 		plotter.title(f"funcB exectution time", weight='bold')
@@ -116,7 +117,10 @@ if __name__ == "__main__":
 			pass
 			
 		plotter.clf()
-		plotter.close(None)
+		plotter.close(None)"""
+		
+		save_path = pjoin(dir, "funcB_time.csv") if results_dir is not None else "funcB_time.csv"
+		savetxt(save_path, values, delimiter=",")
 		
 		save_path = pjoin(dir, "pps_stdout.txt") if results_dir is not None else "stdout.txt"
 		with open(save_path, "w") as stdout_write:

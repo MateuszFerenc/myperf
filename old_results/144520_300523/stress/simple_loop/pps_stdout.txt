@@ -1,0 +1,21 @@
+Ignored tracepoints: probe_simple_loop:funcB
+Timed tracepoints: probe_simple_loop:funcB__return
+Measured tracepoints: ref-cycles:u cpu-cycles:u
+Measured "probe_simple_loop:funcB__return": 200
+Measured "ref-cycles:u": 200
+Measured "cpu-cycles:u": 200
+Execution time:
+	Minumum: 542.72 ms
+	Maximum: 549.12 ms
+	Average: 544.04 ms
+	Standard deviation: 0.673 ms
+ref-cycles:
+	Minumum: 62707814
+	Maximum: 115051772
+	Average: 114324961.0
+	Standard deviation: 4646731.0
+cpu-cycles:
+	Minumum: 56282181
+	Maximum: 103262895
+	Average: 102610244.0
+	Standard deviation: 4170597.0

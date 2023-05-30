@@ -1,0 +1,21 @@
+Ignored tracepoints: probe_sort_decreasing:funcB
+Timed tracepoints: probe_sort_decreasing:funcB__return
+Measured tracepoints: ref-cycles:u cpu-cycles:u
+Measured "probe_sort_decreasing:funcB__return": 200
+Measured "ref-cycles:u": 200
+Measured "cpu-cycles:u": 200
+Execution time:
+	Minumum: 106.0 ms
+	Maximum: 112.8 ms
+	Average: 110.47 ms
+	Standard deviation: 0.752 ms
+ref-cycles:
+	Minumum: 226142
+	Maximum: 38836265
+	Average: 23137522.0
+	Standard deviation: 2744980.0
+cpu-cycles:
+	Minumum: 409353
+	Maximum: 73271029
+	Average: 43677828.0
+	Standard deviation: 5182182.0

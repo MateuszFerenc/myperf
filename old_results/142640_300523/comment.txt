@@ -1,0 +1,3 @@
+./run_all -s false -q -c normal run, gov performance, contexswitching permited
+
+comment: normal run, gov performance, contexswitching permited

@@ -2,10 +2,11 @@
 
 from subprocess import check_output
 from statistics import mean, stdev 
-import matplotlib.pyplot as plotter
+#import matplotlib.pyplot as plotter
 from os.path import join as pjoin
 from os import mkdir
 import argparse
+from numpy import savetxt
 
 def analyze_perf_script(ignore, timed, tracepoints, data):
 	lines = data.strip().split("\n")
@@ -79,7 +80,7 @@ if __name__ == "__main__":
 		print(line)
 		stdout_data += line + '\n'
 		
-		plotter.plot(values, color='r', label='funcB')
+		"""plotter.plot(values, color='r', label='funcB')
 		plotter.xlabel('tracepoint no.', weight='light', style='italic')
 		plotter.ylabel('time [ms]', weight='light', style='italic')
 		plotter.title(f"funcB exectution time", weight='bold')
@@ -98,7 +99,7 @@ if __name__ == "__main__":
 			pass
 		
 		plotter.clf()	
-		plotter.close(None)
+		plotter.close(None)"""
 		
 		_min = round(min(other[o_0]), 0)
 		_max = round(max(other[o_0]), 0)
@@ -116,7 +117,7 @@ if __name__ == "__main__":
 		print(line)
 		stdout_data += line + '\n'
 		
-		plotter.plot(other[o_0], color='g', label='ref-cycles')
+		"""plotter.plot(other[o_0], color='g', label='ref-cycles')
 		plotter.plot(other[o_1], color='r', label='cpu-cycles')
 		plotter.xlabel('tracepoint no.', weight='light', style='italic')
 		plotter.ylabel('cycles [n]', weight='light', style='italic')
@@ -133,7 +134,16 @@ if __name__ == "__main__":
 			pass
 		
 		plotter.clf()	
-		plotter.close(None)
+		plotter.close(None)"""
+		
+		save_path = pjoin(dir, "funcB_time.csv") if results_dir is not None else "funcB_time.csv"
+		savetxt(save_path, values, delimiter=",")
+		
+		save_path = pjoin(dir, "funcB_ref_cycles.csv") if results_dir is not None else "funcB_ref_cycles.csv"
+		savetxt(save_path, other[o_0], delimiter=",")
+		
+		save_path = pjoin(dir, "funcB_cpu_cycles.csv") if results_dir is not None else "funcB_cpu_cycles.csv"
+		savetxt(save_path, other[o_1], delimiter=",")
 		
 		save_path = pjoin(dir, "pps_stdout.txt") if results_dir is not None else "stdout.txt"
 		with open(save_path, "w") as stdout_write:

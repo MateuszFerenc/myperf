@@ -5,17 +5,17 @@ Measured "probe_sort_decreasing:funcB__return": 200
 Measured "ref-cycles:u": 200
 Measured "cpu-cycles:u": 200
 Execution time:
-	Minumum: 111.1 ms
-	Maximum: 117.15 ms
-	Average: 112.85 ms
-	Standard deviation: 1.615 ms
+	Minumum: 114.61 ms
+	Maximum: 122.1 ms
+	Average: 116.31 ms
+	Standard deviation: 1.544 ms
 ref-cycles:
-	Minumum: 23216828
-	Maximum: 23905543
-	Average: 23454591.0
-	Standard deviation: 126332.0
+	Minumum: 24142940
+	Maximum: 24648324
+	Average: 24373707.0
+	Standard deviation: 97840.0
 cpu-cycles:
-	Minumum: 43625446
-	Maximum: 44540174
-	Average: 43879611.0
-	Standard deviation: 179250.0
+	Minumum: 43433417
+	Maximum: 44064587
+	Average: 43782159.0
+	Standard deviation: 103958.0
