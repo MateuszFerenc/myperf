@@ -134,6 +134,7 @@ simple_loop  9298 [000]     0.000000000: 1029181631                    cpu-cycle
 ... and so on...
 \end{verbatim}
 
+\newpage
 \section{Adjusting hardware te get better results}
 
 When it comes to the results, it is interesting to note that the actual measured cycles depend on the CPU statistics.\\
@@ -141,13 +142,14 @@ First of all, most important thing to do is to restrict CPU context-switching, i
 Importance of this move is that when process is moved between cores (context switch occurs), actual data from PMU is lost due to the fact that each core has its own performance registers and counted values differ between cores.\\
 I.e. if cycles are counted on first core  and then process is switched to second core, the value of measured cycles on first core and second core is not added. So finally the amount of measured cycles will be much different than it should be.\\\\
 To restrict context-switching the Kernel should be informed to run the process on specified core only.\\
-This is achieved by running command/program by '\textbf{taskset}'
+This is achieved by running command/program using '\textbf{taskset}'\\
+\textbf{taskset ./run\_all \textit{switches}}\\\\
+To further improve measurements quality, you can change CPU governor to performance:\\
+\textbf{cpupower frequency-set --governor performance} or \textbf{cpufreq-set --governor performance}\\
+Also changing CPU behavior can make further improvements:\\
+Disable SpeedStep technology (disable underclocking option of the cpu)\\
+Disable HyperThreading technology (disable virtual cores)\\
+Disable TurboBoost technology (disable higher cpu frequencies)\\
 
-Single core run (no context-switching)\\
-Disable SpeedStep technology\\
-Disable HyperThreading technology\\
-Disable TurboBoost technology\\
-Change CPU governor to performance\\
-\textbf{cpupower frequency-set --governor performance}
 
 \end{document}
