@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.9)  30 MAY 2023 20:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.9)  31 MAY 2023 15:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -307,6 +307,27 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/draftwatermark/draftwatermark.sty
+Package: draftwatermark 2020/12/08 3.0 Put a gray textual watermark on document
+ pages
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count287
@@ -315,20 +336,20 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 (./documentation.aux)
 \openout1 = `documentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -345,38 +366,8 @@ LaTeX Font Info:    ... okay on input line 11.
 \everyMPtoPDFconversion=\toks34
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
@@ -417,241 +408,258 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-3.
+7.
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-3.
+7.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-13.
+17.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-13.
+17.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 13.
+(Font)              <12> on input line 17.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 13.
+(Font)              <8> on input line 17.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 13.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
+(Font)              <6> on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 17--26
+Underfull \hbox (badness 10000) in paragraph at lines 21--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--26
+Underfull \hbox (badness 10000) in paragraph at lines 21--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--37
+Underfull \hbox (badness 10000) in paragraph at lines 33--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--37
+Underfull \hbox (badness 10000) in paragraph at lines 33--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--37
+Underfull \hbox (badness 10000) in paragraph at lines 33--41
 
  []
 
 
-Overfull \hbox (0.94092pt too wide) in paragraph at lines 29--37
+Overfull \hbox (0.94092pt too wide) in paragraph at lines 33--41
 \T1/lmr/m/n/10.95 To do this you need to edit in \T1/lmr/bx/n/10.95 /etc/sysctl
 .conf \T1/lmr/m/n/10.95 file, value af-ter \T1/lmr/bx/n/10.95 ker-nel.perf_even
 t_paranoid
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--37
+Underfull \hbox (badness 10000) in paragraph at lines 33--41
 
  []
 
-[1
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 41--46
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--59
+]
+Underfull \hbox (badness 10000) in paragraph at lines 45--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--59
+Underfull \hbox (badness 10000) in paragraph at lines 53--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--59
+Underfull \hbox (badness 10000) in paragraph at lines 53--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--59
+Underfull \hbox (badness 10000) in paragraph at lines 53--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--63
 
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 6
-3.
+7.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 76--80
+Underfull \hbox (badness 10000) in paragraph at lines 80--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--94
+Underfull \hbox (badness 10000) in paragraph at lines 87--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--94
+Underfull \hbox (badness 10000) in paragraph at lines 87--98
 
  []
 
 
-Overfull \hbox (16.87968pt too wide) in paragraph at lines 83--94
+Overfull \hbox (16.87968pt too wide) in paragraph at lines 87--98
 \T1/lmr/m/n/10.95 i.e.: perf record -e probe_test:TestFunction -e probe_test:Te
 stFunction__return ./test_executable 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--94
+Underfull \hbox (badness 10000) in paragraph at lines 87--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--94
+Underfull \hbox (badness 10000) in paragraph at lines 87--98
 
  []
 
 [2]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9
-4.
+8.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
+
+ []
+
+
+Overfull \hbox (12.67952pt too wide) in paragraph at lines 116--116
+[]\T1/lmtt/m/n/10.95 -------0------- ----1----- ----2----- -------------3------
+----- -----4----- --5--[] 
+ []
+
+
+Overfull \hbox (12.67952pt too wide) in paragraph at lines 116--116
+[]\T1/lmtt/m/n/10.95 executable-name process-id [cpu-core] time-of-event-occurr
+ence: event_name: trace[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--122
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 112--119
+Underfull \hbox (badness 10000) in paragraph at lines 128--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--119
+Underfull \hbox (badness 10000) in paragraph at lines 128--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--119
+Underfull \hbox (badness 10000) in paragraph at lines 128--135
 
  []
 
 
-Overfull \hbox (52.92065pt too wide) in paragraph at lines 135--135
+Overfull \hbox (52.92065pt too wide) in paragraph at lines 151--151
 []\T1/lmtt/m/n/10.95 simple_loop  9298 [000]     0.000000000:         probe_sim
 ple_loop:funcB: (56309a67d149)[] 
  []
 
 
-Overfull \hbox (47.17192pt too wide) in paragraph at lines 135--135
+Overfull \hbox (47.17192pt too wide) in paragraph at lines 151--151
 []\T1/lmtt/m/n/10.95 simple_loop  9298 [000]     1.087778453: probe_simple_loop
 :funcB__return: (56309a67d149[] 
  []
 
 
-Overfull \hbox (29.92572pt too wide) in paragraph at lines 135--135
+Overfull \hbox (29.92572pt too wide) in paragraph at lines 151--151
 []\T1/lmtt/m/n/10.95 simple_loop  9298 [000]     0.000000000: 1148077744       
              ref-cycles:u:[] 
  []
 
 
-Overfull \hbox (29.92572pt too wide) in paragraph at lines 135--135
+Overfull \hbox (29.92572pt too wide) in paragraph at lines 151--151
 []\T1/lmtt/m/n/10.95 simple_loop  9298 [000]     0.000000000: 1030436445       
              cpu-cycles:u:[] 
  []
 
 
-Overfull \hbox (52.92065pt too wide) in paragraph at lines 135--135
+Overfull \hbox (52.92065pt too wide) in paragraph at lines 151--151
 []\T1/lmtt/m/n/10.95 simple_loop  9298 [000]     0.000007534:         probe_sim
 ple_loop:funcB: (56309a67d149)[] 
  []
 
 
-Overfull \hbox (47.17192pt too wide) in paragraph at lines 135--135
+Overfull \hbox (47.17192pt too wide) in paragraph at lines 151--151
 []\T1/lmtt/m/n/10.95 simple_loop  9298 [000]     1.095117039: probe_simple_loop
 :funcB__return: (56309a67d149[] 
  []
 
 
-Overfull \hbox (29.92572pt too wide) in paragraph at lines 135--135
+Overfull \hbox (29.92572pt too wide) in paragraph at lines 151--151
 []\T1/lmtt/m/n/10.95 simple_loop  9298 [000]     0.000000000: 1146679864       
              ref-cycles:u:[] 
  []
 
 
-Overfull \hbox (29.92572pt too wide) in paragraph at lines 135--135
+Overfull \hbox (29.92572pt too wide) in paragraph at lines 151--151
 []\T1/lmtt/m/n/10.95 simple_loop  9298 [000]     0.000000000: 1029181631       
              cpu-cycles:u:[] 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 140--153
+Underfull \hbox (badness 10000) in paragraph at lines 160--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--153
+Underfull \hbox (badness 10000) in paragraph at lines 160--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--153
+Underfull \hbox (badness 10000) in paragraph at lines 160--172
 
  []
 
 [5] (./documentation.aux) ) 
 Here is how much of TeX's memory you used:
- 5344 strings out of 480247
- 85938 string characters out of 5896152
- 389246 words of memory out of 5000000
- 23181 multiletter control sequences out of 15000+600000
- 509033 words of font info for 55 fonts, out of 8000000 for 9000
+ 5354 strings out of 480247
+ 85708 string characters out of 5896152
+ 388983 words of memory out of 5000000
+ 23198 multiletter control sequences out of 15000+600000
+ 512048 words of font info for 56 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,6n,67p,289b,221s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,62p,324b,221s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr
 /share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public
 /lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/t
@@ -659,7 +667,7 @@ exmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on documentation.pdf (5 pages, 209684 bytes).
+Output written on documentation.pdf (5 pages, 216677 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
